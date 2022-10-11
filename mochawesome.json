@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-11T16:35:54.820Z",
+    "end": "2022-10-11T16:35:56.149Z",
+    "duration": 1329,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c2835f6f-aaf3-419b-bdcc-dca513f6e142",
+      "title": "",
+      "fullFile": "C:\\Code\\pwd\\pwd_tests\\spec\\powder_watts\\api\\profile\\get.profile.spec.js",
+      "file": "\\spec\\powder_watts\\api\\profile\\get.profile.spec.js",
+      "beforeHooks": [
+        {
+          "title": "\"before all\" hook in \"{root}\"",
+          "fullTitle": "\"before all\" hook in \"{root}\"",
+          "timedOut": false,
+          "duration": 0,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "console.log(\"setup ...\");\nif (process.env.ENV === 'stage') {\n    request.options.baseUrl = 'https://dx56nadid8.execute-api.us-east-1.amazonaws.com/stage';\n    request.options.token = 'eyJraWQiOiI2R0FXM3NoR0xuV1RNbUlESXFmSFZRanJFZUtqdCs5cUorSHNXME9yK2pZPSIsImFsZyI6IlJTMjU2In0.eyJhdF9oYXNoIjoiMVIyVkZKNm1hc0h6TU5jZHdOZWFsZyIsInN1YiI6IjdhZWVkMjc1LTNjYjctNDVjMy04NWM5LTQ1YjVhZjI5OGQwZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9RMXR1Q1lOcVQiLCJjb2duaXRvOnVzZXJuYW1lIjoiN2FlZWQyNzUtM2NiNy00NWMzLTg1YzktNDViNWFmMjk4ZDBlIiwiYXVkIjoiMzljdGxwc2MzMXNjcmxxaDU4NmZjZ2ticGQiLCJldmVudF9pZCI6IjI1YTE1ZTAzLTcxYjEtNDNmYi1hNjRjLWM3MjNjOTU0MTQ5NiIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjY1NDk5Njk5LCJleHAiOjE2NjU1ODYwOTksImlhdCI6MTY2NTQ5OTY5OSwianRpIjoiYjEwYjk4ZTAtNTc1MS00ZDMwLTg2MWUtMjMzMDBiZTAxZTgyIiwiZW1haWwiOiJkaWFuYS5vdnNpdWNoZW5rb0Bpbm1vc3QucHJvIn0.NNd2yz2v9e60v9XY72P1dxhNjgWB-DPQlvMYj8Y7MN2U5FJd6Pbo4gR1OeQLxL-xgEtQ4bZ3E70K3JSclODFl11azoPbha5B7H6MlpmrcC8VNzxbzRcAvo0eIblklpSBciK88uEYcPY3XgdEQ2UHGIETr_HqjFh4T9P2pIK5KLHmpCzBbqMvW_R1oWXLDwh7C0LN-J1aQMfmi1v--HEcUCQiTwqnYbxKYfi3zakG3VO1zeaHFweJQSacz1_mcSIT6JHBBwtG1X-bjblHJgzcY8a33_i-rgusnqGrKqirTyPiMsD9SochMXFH0nxD-Jaro7r4L5SAs1lJkVlZTFDEZg';\n} else if (process.env.ENV === 'prod') {\n    request.options.baseUrl = 'https://chyu32umra.execute-api.us-east-1.amazonaws.com/prod';\n    request.options.token = 'eyJraWQiOiJYKzdVVkM5NlwvRUh6RmN1NGR5cTNwNklHM2pWZllIMWkrZHRJdWU0Nm0zND0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiSzJqVkQwVXl4VTRab3R2RDBMN2tQQSIsInN1YiI6Ijk3NjdkOGQzLTgyNDMtNGQwMS1hMTQ2LWQ3NTU1ODAxZjRiNCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9tQ2xmS1l1QU0iLCJjb2duaXRvOnVzZXJuYW1lIjoiOTc2N2Q4ZDMtODI0My00ZDAxLWExNDYtZDc1NTU4MDFmNGI0IiwiYXVkIjoiN3AycWZuYzh2cWwxaTdkMDlpMXNjOHR2bWwiLCJldmVudF9pZCI6Ijc4Mjk0NDliLWVlNWUtNDRkMS1iYzRmLTc1MWQwNGE3MTBhOSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjY0MzU5NjMxLCJleHAiOjE2NjQ0NDYwMzEsImlhdCI6MTY2NDM1OTYzMSwianRpIjoiNGNmZTdjY2YtMDkyYy00N2MxLTkyNmYtMjg2ZGJjMDM4MmRlIiwiZW1haWwiOiJkaWFuYS5vdnNpdWNoZW5rb0Bpbm1vc3QucHJvIn0.aLhbrfSYb-DsXKqQso0Qi8rxJ3-f9zwmBxqk2TXJiSK8SqXMSykwVClC1tL5HOlpvQ5wDQr6GRjmzPg5lc3hU9P-PDAplx_8Bt-uJpSn9GRNBM8cdR5R7jov_zj-64yJTloCSQjE-mnN2cdS919qTmDJ6aB2G1iJiCWwSiq1W-dfofhuWdx1x5rIy1TogGwxnUWY_K66f4ONSve-OZOCZB9lXMEkxtDzAhJmuEB-bU3M8ioEMxQyVBWcN0FY_dLHfpTGuhCawySJabraJY8pwlLgvxCcz1C6dkShO5gI_pK4JAl7uEt8dHUqlV28jzZhRgdNky4RaEoV4nZDrfWHlg';\n} else {\n    throw new Error('Not found env');\n}\nconsole.log(\"setup OK.\");",
+          "err": {},
+          "uuid": "3833c1ec-6f33-452f-a9af-c6010c80c176",
+          "parentUUID": "c2835f6f-aaf3-419b-bdcc-dca513f6e142",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "57a2be03-cee2-4f4d-8083-e87bef87931c",
+          "title": "Should test \"Get user profile\"",
+          "fullFile": "C:\\Code\\pwd\\pwd_tests\\spec\\powder_watts\\api\\profile\\get.profile.spec.js",
+          "file": "\\spec\\powder_watts\\api\\profile\\get.profile.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should GET user profile successfully",
+              "fullTitle": "Should test \"Get user profile\" should GET user profile successfully",
+              "timedOut": false,
+              "duration": 730,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const res = await request.get('/profile');\nexpect(res.status).to.eql(200);",
+              "err": {},
+              "uuid": "2846533e-9cd4-41e2-af3f-590202215be5",
+              "parentUUID": "57a2be03-cee2-4f4d-8083-e87bef87931c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should FAIL with wrong token",
+              "fullTitle": "Should test \"Get user profile\" should FAIL with wrong token",
+              "timedOut": false,
+              "duration": 406,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const res = await request.get('/profile', {}, {\n    'Authorization': '',\n});\nexpect(res.status).to.eql(401);\nexpect(res.statusText).to.eql(\"Unauthorized\");",
+              "err": {},
+              "uuid": "db93683a-1c44-44c1-9d13-616618e96321",
+              "parentUUID": "57a2be03-cee2-4f4d-8083-e87bef87931c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should FAIL with wrong request type",
+              "fullTitle": "Should test \"Get user profile\" should FAIL with wrong request type",
+              "timedOut": false,
+              "duration": 187,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const res = await request.post('/profile');\nexpect(res.status).to.eql(403);\nexpect(res.statusText).to.include('Forbidden')",
+              "err": {},
+              "uuid": "cbddb50b-f729-4a07-aac6-b32f2a4187f2",
+              "parentUUID": "57a2be03-cee2-4f4d-8083-e87bef87931c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2846533e-9cd4-41e2-af3f-590202215be5",
+            "db93683a-1c44-44c1-9d13-616618e96321",
+            "cbddb50b-f729-4a07-aac6-b32f2a4187f2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1323,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.0.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": "true",
+        "reportTitle": "My\\ Custom\\ Title",
+        "charts": "true",
+        "code": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
